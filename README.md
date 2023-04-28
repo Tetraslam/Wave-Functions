@@ -3,11 +3,11 @@
 ### This is a small project I made for our physics chapter on waves in school!
 
 #### Planned wave representations:
-- [ ] Sine wave
-- [ ] Cosine wave
-- [ ] Triangle wave
+- [x] Sine wave
+- [x] Cosine wave
+- [x] Triangle wave
 - [ ] Sawtooth wave
-- [ ] Pulse wave
+- [x] Pulse wave
 - [ ] Square wave
 - [ ] Step wave
 - [ ] Gaussian wave
