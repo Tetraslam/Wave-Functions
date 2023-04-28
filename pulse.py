@@ -31,7 +31,7 @@ def update(frame):
     return ax.lines
 
 # Set the animation interval and start the animation
-ani = animation.FuncAnimation(fig, update, frames=100, interval=50)
+ani = animation.FuncAnimation(fig, update, frames=2000, interval=15)
 
 # Display the plot
 plt.show()

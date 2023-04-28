@@ -36,7 +36,7 @@ def update(frame):
     return [line_sin, line_cos]
 
 # Set the animation interval and start the animation
-ani = animation.FuncAnimation(fig, update, frames=1000, interval=10)
+ani = animation.FuncAnimation(fig, update, frames=2000, interval=15)
 
 # Display the plot
 plt.show()

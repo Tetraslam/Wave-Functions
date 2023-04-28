@@ -6,15 +6,13 @@
 - [x] Sine wave
 - [x] Cosine wave
 - [x] Triangle wave
-- [ ] Sawtooth wave
+- [x] Sawtooth wave
 - [x] Pulse wave
-- [ ] Square wave
-- [ ] Step wave
-- [ ] Gaussian wave
-- [ ] Exponential wave
-- [ ] Logarithmic wave
-- [ ] Hyperbolic wave
-- [ ] Signmoid wave
-- [ ] Fourier wave
-- [ ] Fractal wave
+- [x] Step wave
+- [x] Gaussian wave
+- [x] Exponential wave
+- [x] Logarithmic wave
+- [x] Sigmoid wave
+- [x] Fourier wave
+- [x] Fractal wave
 - [ ] Random wave

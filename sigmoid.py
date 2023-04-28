@@ -5,33 +5,35 @@ import matplotlib.animation as animation
 fig, ax = plt.subplots()
 
 # Set the x-axis range and the number of points to generate
-x_range = 2 * np.pi
+x_range = 10
 num_points = 200
 
-# Generate the x values for the triangle wave
-x_values = np.linspace(0, x_range, num_points)
-
-# Define the update function to animate the triangle wave
+# Define the update function to animate the sigmoid wave
 def update(frame):
-    # Generate new y values for the triangle wave based on the current frame
-    new_y_values = np.abs(np.mod(x_values + frame * 0.1, 2*np.pi) - np.pi) - np.pi/2
-    
-    # Plot the triangle wave
+    # Clear the plot
     ax.clear()
+    
+    # Generate the x values
+    x_values = np.linspace(-x_range, x_range, num_points)
+    
+    # Generate new y values based on the current frame
+    new_y_values = 1 / (1 + np.exp(-x_values + frame))
+    
+    # Plot the new wave
     ax.plot(x_values, new_y_values, 'b-')
     
     # Set the plot limits and labels
     ax.set_xlim(0, x_range)
-    ax.set_ylim(-2, 2)
+    ax.set_ylim(-0.1, 1.1)
     ax.set_xlabel('Time')
     ax.set_ylabel('Amplitude')
-    ax.set_title('Triangle Wave')
+    ax.set_title('Sigmoid Wave')
     
     # Return the line object for the animation to use
     return ax.lines
 
 # Set the animation interval and start the animation
-ani = animation.FuncAnimation(fig, update, frames=2000, interval=15)
+ani = animation.FuncAnimation(fig, update, frames=20, interval=50)
 
 # Display the plot
 plt.show()
